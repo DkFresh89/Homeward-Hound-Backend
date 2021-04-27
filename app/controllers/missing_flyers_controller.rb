@@ -1,0 +1,2 @@
+class MissingFlyersController < ApplicationController
+end
