@@ -5,8 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-User.create(name: "doug", address: "123", phone_number: "654654")
-
-
-puts "Seeded"
