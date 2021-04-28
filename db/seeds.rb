@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(name: 'Pesh', address: 'Cuesta de Anna Borrell 15
+User.create(name: 'Pesh', password_digest: 123, address: 'Cuesta de Anna Borrell 15
     Alicante, 21914', phone_number: '+1-546-829-2634', good_sam: false)
-User.create(name: 'Nich', address: '7867 Adam Harbor Apt. 529
+User.create(name: 'Nich', password_digest: 123, address: '7867 Adam Harbor Apt. 529
     Lanestad, WI 86385', phone_number: '+39 947 87 64 5939', good_sam: false)
-User.create(name: 'Max', address: 'Cuesta de Rafael Carretero 71 Puerta 0 
+User.create(name: 'Max', password_digest: 123, address: 'Cuesta de Rafael Carretero 71 Puerta 0 
     Granada, 26339', phone_number: '437-877-5994', good_sam: true)
 
 
