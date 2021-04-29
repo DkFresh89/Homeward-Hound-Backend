@@ -16,10 +16,12 @@ class UsersController < ApplicationController
     end 
 
     def signup
-        # user_params = params.permit(:username, :password_digest, :rank, :high_score)
-        # new_user = {username: user_params["username"], password_digest: user_params["password_digest"], rank: User.all.length+1, high_score: 0}
-        # user = User.create(new_user)
-        byebug 
+        user_params = params.permit(:name, :address, :phone_number, :good_sam, :password_digest)
+        new_user = {name: user_params["name"], address: user_params["address"], phone_number: user_params["phone_number"], good_sam: user_params["good_sam"], password_digest: user_params["password_digest"]}
+        user = User.create(new_user)
+        # byebug 
+        render json: user
+        puts "Hit signup"
     end 
 
 end
