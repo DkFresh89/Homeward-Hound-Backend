@@ -1,4 +1,4 @@
 class MissingFlyerSerializer
   include JSONAPI::Serializer
-  attributes :lattitude, :longitude, :found, :reward, :description
+  attributes :latitude, :longitude, :found, :reward, :description
 end

@@ -1,9 +1,9 @@
 class MissingFlyersController < ApplicationController
 
-    # def index 
-    #     @flyer = MissingFlyer.all 
-    #     render :json @flyer
-    # end
+    def index 
+        flyer = MissingFlyer.all 
+        render json: MissingFlyerSerializer.new(flyer).serializable_hash.to_json
+    end
 
     def create_flyer
         flyer_params = params.permit(:latitude, :longitude, :description, :reward, :found, :dog_id)
