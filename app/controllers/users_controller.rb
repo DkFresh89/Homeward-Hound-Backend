@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
     def login
         user = User.find_by(name: params[:name], password_digest: params[:password_digest])
-        render json: {user: user}
+        render json: UserSerializer.new(user).serializable_hash.to_json
     end 
 
     def signup
