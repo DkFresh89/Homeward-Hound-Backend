@@ -16,9 +16,9 @@ User.create(name: 'Max', password_digest: 123, address: 'Cuesta de Rafael Carret
 
 
     Dog.create(name: 'Romulus', breed: 'Rotty', size: 'Big', age: 8, temperament: 'Good Boy', image: [
-        "https://images.dog.ceo/breeds/rottweiler/n02106550_10588.jpg",
-        "https://images.dog.ceo/breeds/rottweiler/n02106550_11543.jpg",
-        "https://images.dog.ceo/breeds/rottweiler/n02106550_4962.jpg"
+        "https://photos.app.goo.gl/SxUiAxxs3tHf2j7E9",
+        "https://photos.app.goo.gl/idf4hkTTNhUDqFYPA",
+        "https://lh3.googleusercontent.com/pw/ACtC-3d58280a6z8LUbNrYCFbo6vyTAFkjTWC4-nW0hQNkdO0pYWTEPj_iCakV7GK93Vs6ICl34WyYaTTb_G63zy9T1a4haTY0lCPO6kjweH-Z1sO-qGlOFXao9bSDwtZYb7e842ISxwcMfOjyRVTILAeJCrzg=w756-h1008-no?authuser=0"
       ], user_id: 1)
     Dog.create(name: 'Dog de Nich', breed: 'Crazy', size: 'Medium', age: 2, temperament: 'Cray', image: [
         "https://images.dog.ceo/breeds/hound-afghan/n02088094_7260.jpg",

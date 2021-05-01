@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   post "/signup", to: "users#signup"
   post "/add_dog", to: "dogs#add_dog"
   post "/create_flyer", to: "missing_flyers#create_flyer"
+  patch "/flyers/:id", to: "missing_flyers#update_flyer"
 
 
 end
