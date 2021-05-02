@@ -29,7 +29,7 @@ class MissingFlyersController < ApplicationController
         new_flyer = { latitude: flyer_params['latitude'], longitude: flyer_params['longitude'], description: flyer_params['description'], reward: flyer_params['reward'], found: flyer_params['found'], dog_id: flyer_params['dog_id']}
         
         flyer = MissingFlyer.create(new_flyer)
-        render json: flyer 
+        render json: MissingFlyerSerializer.new(flyer).serializable_hash.to_json 
         puts 'added flyer'
         # byebug
     end
