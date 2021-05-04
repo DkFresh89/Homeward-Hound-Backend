@@ -21,4 +21,10 @@ class DogsController < ApplicationController
 
     end 
 
+    def destroy
+        @dog = Dog.find(params[:id])
+        @dog.destroy!
+        render json: @dog
+    end
+
 end
