@@ -8,7 +8,7 @@
 
 
 User.create(name: 'Pesh', password_digest: 123, address: 'Cuesta de Anna Borrell 15
-    Alicante, 21914', phone_number: '+1-546-829-2634', good_sam: false)
+    Alicante, 21914', phone_number: '1-546-829-2634', good_sam: false)
 User.create(name: 'Nich', password_digest: 123, address: '7867 Adam Harbor Apt. 529
     Lanestad, WI 86385', phone_number: '+39 947 87 64 5939', good_sam: false)
 User.create(name: 'Max', password_digest: 123, address: 'Cuesta de Rafael Carretero 71 Puerta 0 
@@ -17,9 +17,10 @@ User.create(name: 'Richi', phone_number: '342-155-1746', password_digest: 123, a
     Mancini laziale, 01521 Carbonia-Iglesias (FE)', good_sam: false)
 User.create(name: 'Jamie', phone_number: '660-979-0318', password_digest: 123, address: '919 Jacobs Glens Suite 417
     South Michelleview, ND 95517', good_sam: false)
-User.create(name: 'Doug', password_digest: 123, phone_number: '343-451-8790', address: 'Paseo de Hugo Casals 9
-    Cádiz, 60507', good_sam: false)
+User.create(name: 'Doug', password_digest: 123, phone_number: '343-451-8790', address: '5796 Cabrera Village
+    Mcgeemouth, OK 04358', good_sam: false)
 
+    # -------------------------------------------------------------------
 
     Dog.create(name: 'Romulus', breed: 'Rotty', size: 'Big', age: 8, temperament: 'Good Boy', image: [
         "https://lh3.googleusercontent.com/pw/ACtC-3fyqqeGqeBVy4-XTDl-W2jrYwcUNbmngzT5ennjzP8jr4Yv3kB6jtccpahNfpEfWPWXegCWBllucRE0QLQo6jNR-uiikfUxZfMuwUHsYTrYkqWXQQMicKdmTHXcZmQsaZe_kHPqIuTC2DoTBQo6oNDnew=w756-h1008-no?authuser=0",
@@ -42,20 +43,18 @@ User.create(name: 'Doug', password_digest: 123, phone_number: '343-451-8790', ad
         'https://lh3.googleusercontent.com/pw/ACtC-3ep2c1P3R_v2wE_Z-U0KfhZwmgT9monKs64xYJC96yBWIEUGKVHWVvHRhfGGSrJOXRrdyMk3R4eGXtgxcLnSU1VQ7qhAHIchjK78eb2-VVbyh9IHfkb8oyV_728EpXgqIyLMwf54u6dtwPmPhf71LPIMA=w841-h1121-no?authuser=0'
     ], user_id: 6)
 
+        # -----------------------------------------------------------------
+
         MissingFlyer.create(latitude: 40.65598491251815, longitude: -74.00443091779843, found: false, reward: true, description: "Very friendly, easily coaxed with food, not aggressive with food.  Please call 932.381.1990 if found", dog_id: 1)
         MissingFlyer.create(latitude: 40.70731002707989, longitude: -73.87788964398466, found: false, reward: false, description: "Playful and loves kids, will most likely gravitate towards them.  Last seen in the park, ran off leash around 5pm", dog_id: 3)
         MissingFlyer.create(latitude: 40.606292835434225, longitude:  -73.9348718081522, found: false, reward: false, description: "Nervous around strangers, may be agressive if not familiar with you.  Please report from a distance", dog_id: 4)
 
-        
+
+        # ---------------------------------------------------------------
 
         Sighting.create(latitude: 40.69329472722745, longitude: -73.97762698692436, description: "Seen running down the street heading west on smith street", user_id: 6, missing_flyer_id: 1)
         Sighting.create(latitude: 40.655961610229284, longitude: -74.01158776112091, description: "Possible stray, no collar on but looks like a house dog")
         Sighting.create(latitude: 40.69329472722745, longitude: -73.97762698692436, description: "Spotted at 7pm heading west on the sidewalk on Grand Ave", user_id: 6)
         Sighting.create(latitude:  40.74188846502518, longitude:  -73.75043832402402, description: "Spotted at 7pm heading west on the sidewalk on Grand Ave", missing_flyer_id: 2)
-       
-
-
-    
-    
 
 puts "🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱"    
