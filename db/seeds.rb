@@ -35,18 +35,27 @@ User.create(name: 'Doug', password_digest: 123, phone_number: '343-451-8790', ad
         "https://images.dog.ceo/breeds/vizsla/n02100583_11473.jpg",
         "https://images.dog.ceo/breeds/vizsla/n02100583_1908.jpg",
         "https://images.dog.ceo/breeds/vizsla/n02100583_6000.jpg"
-      ], user_id: 3)
-      Dog.create( name: 'Tiki', breed: 'Black Lab', size: 'Large', age: 9, temperament: 'Very Friendly', image: [
-          'https://lh3.googleusercontent.com/pw/ACtC-3dJNy6eBwU6r62gYsLPZab0Bn4u1oNr0428FHF25bzt_z8rEx6NLI8-1yGFIK5suEg95JPfEB8zULLrwuMskSWAqb1-9Qeeaols3DZf0ZIj6hphx8Tl3Fmr3bL93REFOZ927Tiumk3ky6sxHWS7pJUh2g=w841-h1121-no?authuser=0',
-          'https://lh3.googleusercontent.com/pw/ACtC-3dzb2q4QL2xuIq0aAmYN3Fm-F0TwmXzx2NZoX3H80U_2KjSGWcshTUxBZufEjBdEDiuOc3v_CbMxJfmf6UYvwvvlfjr-qfMH_FAS_NKVdbjwQYTKbj5Tnjdah7eW0adFpErpO624on7q_DQ775Bb0gukQ=w802-h1069-no?authuser=0',
-          'https://lh3.googleusercontent.com/pw/ACtC-3ep2c1P3R_v2wE_Z-U0KfhZwmgT9monKs64xYJC96yBWIEUGKVHWVvHRhfGGSrJOXRrdyMk3R4eGXtgxcLnSU1VQ7qhAHIchjK78eb2-VVbyh9IHfkb8oyV_728EpXgqIyLMwf54u6dtwPmPhf71LPIMA=w841-h1121-no?authuser=0'
-      ], user_id: 6)
+    ], user_id: 3)
+    Dog.create( name: 'Tiki', breed: 'Black Lab', size: 'Large', age: 9, temperament: 'Very Friendly', image: [
+        'https://lh3.googleusercontent.com/pw/ACtC-3dJNy6eBwU6r62gYsLPZab0Bn4u1oNr0428FHF25bzt_z8rEx6NLI8-1yGFIK5suEg95JPfEB8zULLrwuMskSWAqb1-9Qeeaols3DZf0ZIj6hphx8Tl3Fmr3bL93REFOZ927Tiumk3ky6sxHWS7pJUh2g=w841-h1121-no?authuser=0',
+        'https://lh3.googleusercontent.com/pw/ACtC-3dzb2q4QL2xuIq0aAmYN3Fm-F0TwmXzx2NZoX3H80U_2KjSGWcshTUxBZufEjBdEDiuOc3v_CbMxJfmf6UYvwvvlfjr-qfMH_FAS_NKVdbjwQYTKbj5Tnjdah7eW0adFpErpO624on7q_DQ775Bb0gukQ=w802-h1069-no?authuser=0',
+        'https://lh3.googleusercontent.com/pw/ACtC-3ep2c1P3R_v2wE_Z-U0KfhZwmgT9monKs64xYJC96yBWIEUGKVHWVvHRhfGGSrJOXRrdyMk3R4eGXtgxcLnSU1VQ7qhAHIchjK78eb2-VVbyh9IHfkb8oyV_728EpXgqIyLMwf54u6dtwPmPhf71LPIMA=w841-h1121-no?authuser=0'
+    ], user_id: 6)
 
-    #   Sighting.create(latitude: , longitude: , description: , user_id: '6')
+        MissingFlyer.create(latitude: 40.65598491251815, longitude: -74.00443091779843, found: false, reward: true, description: "Very friendly, easily coaxed with food, not aggressive with food.  Please call 932.381.1990 if found", dog_id: 1)
+        MissingFlyer.create(latitude: 40.70731002707989, longitude: -73.87788964398466, found: false, reward: false, description: "Playful and loves kids, will most likely gravitate towards them.  Last seen in the park, ran off leash around 5pm", dog_id: 3)
+        MissingFlyer.create(latitude: 40.606292835434225, longitude:  -73.9348718081522, found: false, reward: false, description: "Nervous around strangers, may be agressive if not familiar with you.  Please report from a distance", dog_id: 4)
+
+        
+
+        Sighting.create(latitude: 40.69329472722745, longitude: -73.97762698692436, description: "Seen running down the street heading west on smith street", user_id: 6, missing_flyer_id: 1)
+        Sighting.create(latitude: 40.655961610229284, longitude: -74.01158776112091, description: "Possible stray, no collar on but looks like a house dog")
+        Sighting.create(latitude: 40.69329472722745, longitude: -73.97762698692436, description: "Spotted at 7pm heading west on the sidewalk on Grand Ave", user_id: 6)
+        Sighting.create(latitude:  40.74188846502518, longitude:  -73.75043832402402, description: "Spotted at 7pm heading west on the sidewalk on Grand Ave", missing_flyer_id: 2)
+       
 
 
-
-
+    
     
 
 puts "🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱"    
