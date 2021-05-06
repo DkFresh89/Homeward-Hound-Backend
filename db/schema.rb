@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2021_04_28_195237) do
     t.float "latitude"
     t.float "longitude"
     t.string "description"
-    t.datetime "time_stamp"
+    t.string "time_stamp"
     t.bigint "missing_flyer_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
