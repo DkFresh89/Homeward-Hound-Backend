@@ -27,12 +27,12 @@ User.create(name: 'Doug', password_digest: 123, phone_number: '343-451-8790', ad
         "https://lh3.googleusercontent.com/pw/ACtC-3ckUvoHXgKI46snYBgGbbQUqhPXxWpapUoIlh9Cne9haux0caBL7qqCba9y9wfuP2Ir-PFSU3O0oxwtYgrTmVJ5sJok7MDpF-wqer1T2UH13FveLgxpTjp_3Pl77uYhQbl8dayVpdtIr5GT9Bs0A0CFSQ=w756-h1008-no?authuser=0",
         "https://lh3.googleusercontent.com/pw/ACtC-3d58280a6z8LUbNrYCFbo6vyTAFkjTWC4-nW0hQNkdO0pYWTEPj_iCakV7GK93Vs6ICl34WyYaTTb_G63zy9T1a4haTY0lCPO6kjweH-Z1sO-qGlOFXao9bSDwtZYb7e842ISxwcMfOjyRVTILAeJCrzg=w756-h1008-no?authuser=0"
       ], user_id: 1)
-    Dog.create(name: 'Dog de Nich', breed: 'Crazy', size: 'Medium', age: 2, temperament: 'Cray', image: [
+    Dog.create(name: 'Nich', breed: 'Mut', size: 'Medium', age: 2, temperament: 'A little cray', image: [
         "https://images.dog.ceo/breeds/hound-afghan/n02088094_7260.jpg",
         "https://images.dog.ceo/breeds/hound-basset/n02088238_7855.jpg",
         "https://images.dog.ceo/breeds/hound-blood/n02088466_7606.jpg"
     ], user_id: 2)
-    Dog.create(name: 'TBD', breed: 'Vizsla', size: 'Big', age: 1, temperament: 'TBD', image: [
+    Dog.create(name: 'Max Jr.', breed: 'Vizsla', size: 'Big', age: 1, temperament: 'Curious and Playful', image: [
         "https://images.dog.ceo/breeds/vizsla/n02100583_11473.jpg",
         "https://images.dog.ceo/breeds/vizsla/n02100583_1908.jpg",
         "https://images.dog.ceo/breeds/vizsla/n02100583_6000.jpg"

@@ -25,7 +25,7 @@ class MissingFlyersController < ApplicationController
     end 
 
     def create_flyer
-        flyer_params = params.permit(:latitude, :longitude, :description, :reward, :found, :image, :dog_id)
+        flyer_params = params.permit!()
 
         new_flyer = { latitude: flyer_params['latitude'], longitude: flyer_params['longitude'], description: flyer_params['description'], reward: flyer_params['reward'], found: flyer_params['found'], dog_id: flyer_params['dog_id']}
         
