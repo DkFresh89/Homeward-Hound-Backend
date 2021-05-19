@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   post "/add_dog", to: "dogs#add_dog"
   post "/create_flyer", to: "missing_flyers#create_flyer"
   patch "/flyers/:id", to: "missing_flyers#update_flyer"
+  post "/create_sighting", to: "sightings#create_sighting"
+  # delete '/dogs/:id', to: 'dogs#delete_dog'
 
 
 end
