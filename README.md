@@ -1,25 +1,23 @@
-# README
+# Homeward Hound
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A community driven app, connecting lost dogs with their owners.
 
-Things you may want to cover:
+<!-- ### 🖼️ [Backend](https://github.com/yushi1007/Fotoset-Backend-Postgresql-Database) | [Frontend](https://github.com/yushi1007/Fotoset-Frontend) | [Demo](https://www.loom.com/share/99ae7ea624b14fd083f8fabe184b57d8) | [Website](https://fotoset.netlify.app/)  -->
 
-* Ruby version
+# Technologies/APIs Used
 
-* System dependencies
+- Ruby on Rails
+- React.js
+- Google APIs (Geocoding API, Maps Javascript API, and Places API)
 
-* Configuration
+## Creator
 
-* Database creation
+👤 **Doug Kerzner**
 
-* Database initialization
+<!-- - Github:[@YUSHI](https://github.com/yushi1007) 
+- Linked:[LinkedIn](https://www.linkedin.com/in/yushi95/) -->
 
-* How to run the test suite
+## Support
 
-* Services (job queues, cache servers, search engines, etc.)
+Please give a ⭐️ if you like this project, thank you!
 
-* Deployment instructions
-
-* ...
-# Homeward-Hound-Backend

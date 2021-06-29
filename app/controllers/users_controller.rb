@@ -12,8 +12,16 @@ class UsersController < ApplicationController
     end 
 
     def login
-        user = User.find_by(name: params[:name], password_digest: params[:password_digest])
-        render json: UserSerializer.new(user).serializable_hash.to_json
+        # byebug
+        user = User.find_by(name: params[:name], password_digest: params[:password_digest]).valid?
+        # byebug
+        if user.valid?
+            byebug
+            render json: UserSerializer.new(user).serializable_hash.to_json
+        else 
+            byebug
+            render json: { status: 500, errors: user.errors }
+        end 
     end 
 
     def signup
